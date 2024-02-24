@@ -1,0 +1,90 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://cdn.pixabay.com/photo/2021/01/13/03/27/heart-5913128_1280.png);
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    margin-top: 10%;
+}
+
+.textin-header {
+    border-radius: 20px;
+    border: solid 3px white;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    color: rgb(4, 31, 54);
+    text-decoration: double;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 3%;
+    font-family: "Nunito", sans-serif;
+}
+
+h1 {
+    margin-bottom: 4%;
+    font-size: 2em;
+}
+
+h2 {
+    margin-bottom: 2%;
+}
+
+.rosa{
+    position: relative;
+    animation: moveUpDown 2s ease-in-out infinite;
+    transform: translateX(-50%);
+    width: 275px;
+    height: 250px;
+    margin-left: 40%;
+}
+
+@keyframes moveUpDown {
+
+    0%,
+    100% {
+        transform: translateY(0);
+
+    }
+
+    50% {
+        transform: translateY(-50px);
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    h1 {
+        font-size: 25px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    header {
+        margin-bottom: 15%;
+    }
+
+    .rosa {
+        width: 145px;
+        height: 125px;
+        animation: moveUpDown 1.9s ease-in-out infinite;
+        transform: translateX(-50%);
+        margin-left: 32%;
+    }
+}
